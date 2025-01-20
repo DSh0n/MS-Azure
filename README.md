@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/svCFZeT.png" height="40%" width="40%" alt="osticket"/>
+<img src="https://i.imgur.com/hdhcw65.png" height="40%" width="40%" alt="osticket"/>
 <br />
 <h1>On-Premises Active Directory Deployed in the Cloud (Azure)</h1>
 
@@ -117,3 +117,25 @@ Log out of Client_1.<br />
 Attempt to log in with a randomly generated employee account and input an incorrect password multiple times to simulate an account lockout.<br />
 <br /><img src="https://i.imgur.com/P3VYUil.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><br />
 <br />
+17. Unlock the Account<br />
+On DC_1, go to ADUC > Find the locked employee account under _EMPLOYEES.<br />
+Double-click the account > Go to the Account tab > Uncheck Unlock Account > Apply to unlock the account.<br />
+<br /><img src="https://i.imgur.com/jSRNli3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><br />
+<br />
+18. Reset Password, Disable, and Enable User Account<br />
+While in the _EMPLOYEES OU, demonstrate how to:<br />
+Reset the password for a user.<br />
+<br /><img src="https://i.imgur.com/rwnSvCG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><br />
+<br /><img src="https://i.imgur.com/xfy4Oi9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><br />
+Disable and Enable the user account as needed.<br />
+<br /><img src="https://i.imgur.com/SlTE6a2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><br />
+<br /><img src="https://i.imgur.com/FCgwzs3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><br />
+<br />
+19. Observe Event Logs<br />
+On Client_1, sign in as the original user.<br />
+Open the Event Viewer (eventvwr.msc) > Go to Windows Logs > Security.<br />
+Observe the events related to account lockouts, logon attempts, and other security-related activities.<br />
+<br /><img src="https://i.imgur.com/3ZpiBe3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><br />
+<br />
+<br />
+This completes the configuration of Active Directory within Azure Virtual Machines, setting up a domain, user management, group policies, and security measures like account lockouts.
